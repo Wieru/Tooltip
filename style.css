@@ -22,3 +22,32 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.boxes {
+  display: flex;
+  gap: 100px;
+}
+
+.boxes div {
+  width: 200px;
+  height: 200px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.boxes div:hover {
+  transform: scale(105%);
+}
+
+.red {
+  background: rgb(212, 35, 35);
+}
+
+.green {
+  background: rgb(21, 179, 21);
+}
+
+.blue {
+  background: rgb(32, 32, 197);
+}
