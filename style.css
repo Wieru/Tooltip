@@ -29,11 +29,33 @@ body {
 }
 
 .boxes div {
+  position: relative;
   width: 200px;
   height: 200px;
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
+}
+
+.tooltip {
+  position: absolute;
+  min-width: 180px;
+  padding: 30px 15px;
+  background: black;
+  transform: translateY(-140%);
+  border-radius: 15px;
+  color: white;
+}
+
+.tooltip::after {
+  position: absolute;
+  background-color: black;
+  content: '';
+  width: 24px;
+  height: 24px;
+  bottom: -6px;
+  left: 13px;
+  transform: rotate(45deg);
 }
 
 .boxes div:hover {
