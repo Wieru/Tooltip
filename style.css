@@ -41,19 +41,40 @@ body {
   position: absolute;
   min-width: 180px;
   padding: 30px 15px;
-  background: black;
+  background: rgb(126, 36, 148);
   transform: translateY(-140%);
   border-radius: 15px;
   color: white;
 }
 
+.tooltip.top {
+  transform: translateY(-140%);
+}
+
+.tooltip.bottom {
+  bottom: 0;
+  transform: translateY(130%);
+}
+
 .tooltip::after {
   position: absolute;
-  background-color: black;
+  background-color: inherit;
   content: '';
   width: 24px;
   height: 24px;
   bottom: -6px;
+  left: 13px;
+  transform: rotate(45deg);
+}
+
+.tooltip.top::after {
+  bottom: -6px;
+  left: 13px;
+  transform: rotate(45deg);
+}
+
+.tooltip.bottom::after {
+  top: -6px;
   left: 13px;
   transform: rotate(45deg);
 }
